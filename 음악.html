@@ -7,10 +7,15 @@
     <title>Document</title>
 </head>
 <body>
+    <button onclick="myFunction()">
+        무작위 숫자
+    </button>
+    
     <p id="random-number"></p>
 
 <script>
-  // 0 이상 1 미만의 무작위 실수 생성
+function myFunction() {
+     // 0 이상 1 미만의 무작위 실수 생성
   var randomNumber = Math.random();
   
   // 0 이상 100 미만의 무작위 정수 생성
@@ -18,6 +23,7 @@
 
   // 무작위 숫자를 HTML 요소에 할당
   document.getElementById("random-number").innerHTML = randomInt;
+}
 </script>
 
 </body>
