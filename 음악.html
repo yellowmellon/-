@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="random-number"></p>
+
+<script>
+  // 0 이상 1 미만의 무작위 실수 생성
+  var randomNumber = Math.random();
+  
+  // 0 이상 100 미만의 무작위 정수 생성
+  var randomInt = Math.floor(Math.random() * (99999999-10000000)+10000000);
+
+  // 무작위 숫자를 HTML 요소에 할당
+  document.getElementById("random-number").innerHTML = randomInt;
+</script>
+
+</body>
+</html>
