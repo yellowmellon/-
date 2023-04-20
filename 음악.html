@@ -7,24 +7,44 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="myFunction()">
-        무작위 숫자
+    <div class="card" style="width: 5cm; background-color: #f2ff3d;">
+        <button onclick="myFunction1()" style="height: 1cm; width: 2.5cm; background-color: #82e6ff;"  >
+            렌덤 베이스
+        </button>
+        
+        <h1><p id="random-bass">여기에 표시</p></h1>
+    
+    <script>
+    function myFunction1() {
+         // 0 이상 1 미만의 무작위 실수 생성
+      var randomNumber = Math.random();
+      
+      // 0 이상 100 미만의 무작위 정수 생성
+      var randomInt = Math.floor(Math.random() * (99999999-10000000)+10000000);
+    
+      // 무작위 숫자를 HTML 요소에 할당
+      document.getElementById("random-bass").innerHTML = randomInt;
+    }
+    </script>
+    <hr style="background-color: aqua; height: 0.2cm;">
+    <button onclick="myFunction2()" style="height: 1cm; width: 2.5cm; background-color: #82e6ff;"  >
+        렌덤 비트
     </button>
     
-    <h1><p id="random-number">여기에 표시</p></h1>
-
-<script>
-function myFunction() {
+    <h1><p id="random-beat">여기에 표시</p></h1>
+    
+    <script>
+    function myFunction2() {
      // 0 이상 1 미만의 무작위 실수 생성
-  var randomNumber = Math.random();
-  
-  // 0 이상 100 미만의 무작위 정수 생성
-  var randomInt = Math.floor(Math.random() * (99999999-10000000)+10000000);
-
-  // 무작위 숫자를 HTML 요소에 할당
-  document.getElementById("random-number").innerHTML = randomInt;
-}
-</script>
-
+    var randomNumber = Math.random();
+    
+    // 0 이상 100 미만의 무작위 정수 생성
+    var randomInt = Math.floor(Math.random() * (20-1)+1);
+    
+    // 무작위 숫자를 HTML 요소에 할당
+    document.getElementById("random-beat").innerHTML = randomInt;
+    }
+    </script>
+    </div>
 </body>
 </html>
